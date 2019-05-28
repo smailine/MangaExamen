@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('formAjoutGenre');
 });
+
+/*Route::get('/','MangaController@getLesMangas');*/
+
+Route::get('saisieGenre','Controller@ajoutConference');
+Route::post('saisieGenre','ConferenceController@postAjoutConference');
